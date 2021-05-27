@@ -36,6 +36,9 @@ The built libtorch library is located at ```pytorch/torch/lib/tmp_install/``` in
 
 **Update: Have added support for master branch of pytorch or version larger than 1.0.1. For newer version, set ```TORCH_PATH``` to ```pytorch/torch/share/cmake/Torch```**
 
+**Tips:set ```TORCH_PATH``` to ```pytorch/torch/lib/tmp_install/share/cmake/Torch``` **
+
+
 **Required at least 1.0.1. Lower version of pytorch has cuDNN linking issue:https://github.com/pytorch/pytorch/issues/14033#issuecomment-455046353.**
 
 **Plese avoid using the pre-built version of libtorch since it will cause linking errors (due to [CXX11 ABI issue](https://github.com/pytorch/pytorch/issues/13541)).**
