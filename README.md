@@ -38,6 +38,11 @@ The built libtorch library is located at ```pytorch/torch/lib/tmp_install/``` in
 
 **Tips:set ```TORCH_PATH``` to ```pytorch/torch/lib/tmp_install/share/cmake/Torch```**
 
+如果只是下载CPU版本，可以直接使用wget下载对应版本的libtorch
+```bash
+wget https://download.pytorch.org/libtorch/cpu/libtorch-cxx11-abi-shared-with-deps-1.4.0%2Bcpu.zip
+```
+下载完后不用单独编译libtorch，在cmakelist里给出TORCH_PATH的值，或者cmake的时候给出也行。
 
 **Required at least 1.0.1. Lower version of pytorch has cuDNN linking issue:https://github.com/pytorch/pytorch/issues/14033#issuecomment-455046353.**
 
